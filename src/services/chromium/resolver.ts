@@ -29,12 +29,12 @@ export class ChromiumResolver {
   async resolve(): Promise<string> {
     const context = this.context;
     const chromiumDirectory = context.directory;
-    const temporaryDirectory = join(tmpdir(), '.devoirs-chromium');
+    //const temporaryDirectory = join(tmpdir(), '.devoirs-chromium');
 
-    await this.createDirectory(temporaryDirectory);
-    await this.copyDirectory(chromiumDirectory, temporaryDirectory);
+    //await this.createDirectory(temporaryDirectory);
+    //await this.copyDirectory(chromiumDirectory, temporaryDirectory);
 
-    const executable = join(temporaryDirectory, context.executable);
+    const executable = join(chromiumDirectory, context.executable);
 
     // Change mode to `rwx r-x r-x`
     await chmod(
