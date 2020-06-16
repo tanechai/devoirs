@@ -2,16 +2,13 @@
 
 rem To run "devoirs" in Windows using a shortcut.
 
-rem move to current directory
+rem Move to current directory.
 pushd %0\..
 
-rem clear the screen
+rem Clear the screen.
 cls
 
-rem execution contents
+rem Execution contents.
 npm start
-
-rem wait until you press any key
-pause
 
 exit
